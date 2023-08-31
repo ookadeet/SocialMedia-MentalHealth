@@ -1,4 +1,4 @@
-# Social Media, The Attention Economy, and Mental Health
+# Social Media and Mental Health
 
 ## Executive Summary
 
