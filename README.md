@@ -11,7 +11,7 @@ One literature review found “social media envy” was linked to levels of depr
 This project uses a publicly available dataset to explore what impacts, if any, social media use has on several mental health measures. It also looks at whether social media usage can be used to predict mental health outcomes, both in terms of platforms used and time spent online.
 
 ## Methodology
-Raw data was sourced from Kaggle (<a href="https://www.kaggle.com/datasets/souvikahmed071/social-media-and-mental-health?select=smmh.csv">source</a>). The data was collected via a survey asking about social media use and symptoms of depression, anxiety, and ADHD , and about self-esteem. These questions were rated on a five-point Likert scale (Joshi *et al.*, 2015) to quantify symptom severity. Analysis was done using a multivariate multiple linear regression, using hours spent online and total platforms in use as predictors of ADHD, depression, anxiety, and self esteem measures. Cleaning, exploration, and analysis of the data was done via Python in Colab, and the full code can be accessed <a href="https://github.com/ookadeet/SocialMedia-MentalHealth/blob/main/Social_Media_%26_Mental_Health.ipynb">here</a>. Please note, some elements of code were checked using LLMs such as ChatGPT. Independent variables were checked for collinearity by calculating the Variance Inflation Factor (Einblick, 2023) and deemed to not be collinear.
+Raw data was sourced from Kaggle (<a href="https://www.kaggle.com/datasets/souvikahmed071/social-media-and-mental-health?select=smmh.csv">source</a>). The data was collected via a survey asking about social media use and symptoms of depression, anxiety, and ADHD , and about self-esteem. These questions were rated on a five-point Likert scale (Joshi *et al.*, 2015) to quantify symptom severity. Analysis was done via linear regression, using hours spent online and total platforms in use as predictors of scores on ADHD, depression, anxiety, and self-esteem measures. Cleaning, exploration, and analysis of the data was done via Python in Colab, and the full code can be accessed <a href="https://github.com/ookadeet/SocialMedia-MentalHealth/blob/main/Social_Media_%26_Mental_Health.ipynb">here</a>. Please note, some elements of code were checked using LLMs such as ChatGPT. Independent variables were checked for collinearity by calculating the Variance Inflation Factor (Einblick, 2023) and deemed to not be collinear.
 
 ## Exploratory Data Analysis
 ### Respondent Make-Up
@@ -52,20 +52,22 @@ There were four questions relating to ADHD, and the graph shows the total across
 
 <img align="center" src="img/ADHD2.png" height=300>
 
-#### Self Esteem
-While still using the five-point scale, self esteem was scored differently with a score of three meaning no impact to self esteem, one meaning very negative impact, and 5 meaning very positive impact. Respondents tend to skew negative here.
+#### Self-Esteem
+While still using the five-point scale, self esteem was scored differently with a score of three meaning no impact to self-esteem, one meaning very negative impact, and 5 meaning very positive impact. Respondents tend to skew negative here.
 
 <img align="center" src="img/Self Esteem2.png" height=300>
 
 ## Hypotheses
 
-For each of the dependent variables (scores on ADHD, Anxiety, Depression, and Self Esteem measures), hypotheses were as follows:
+For each of the dependent variables (scores on ADHD, anxiety, depression, and self-esteem measures), hypotheses were as follows:
 
 **H1** - Scores are influenced by time spent online and/or number of platforms used
 
 **H0** - Scores are not influenced by either time spent online or number of platforms used
 
 ## Results
+
+For ADHD, anxiety, depression, and self-esteem, no significant influence of total number of platforms used was found while hours online was found to have a significant influence. The regression analysis was re-run for each using only hours spent online and retained significance. 
 
 ## Conclusion
 
