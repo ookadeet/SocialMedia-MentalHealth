@@ -67,7 +67,7 @@ For each of the dependent variables (scores on ADHD, anxiety, depression, and se
 
 ## Results
 
-For ADHD, anxiety, depression, and self-esteem, no significant influence of total number of platforms used was found as p-values for each exceeded the 0.05 tolerance. Hours online was found to have a significant influence. The regression analysis was re-run for each using only hours spent online and retained significance. Outputs below, including R-square, Mean Absolute Error, Mean Square Error, and Root Mean Square Error:
+For ADHD, anxiety, depression, and self-esteem, no significant influence of total number of platforms used was found as p-values for each exceeded the 0.05 tolerance. Hours online was found to have a significant influence. The regression analysis was re-run for each using only hours spent online and retained significance. Analysis outputs are detailed below, including R-square, Mean Absolute Error, Mean Square Error, and Root Mean Square Error:
 
 | Measure | p-Value | Intercept | Coefficient | R2 | MAE | MSE | RMSE |
 | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
@@ -76,8 +76,16 @@ For ADHD, anxiety, depression, and self-esteem, no significant influence of tota
 | Depression | <0.01 | 7.46 | 0.65 | 13.05% | 2.59 | 10.03 | 3.17 |
 | Self-esteem | 0.01 | 7.40 | 0.21 | 6.74% | 1.97 | 6.22 | 2.49 |
 
+The null hypothesis (H0) can be rejected for ADHD, anxiety, depression, and self-esteem.
+
 ## Conclusion
 
-While hours onlne was found to be a significant influencer of scores on ADHD, anxiety, depression, and self-esteem measures, the low R-squared figure for each (especially depression and self-esteem) indicates it does not explain much of the variance in scores. High MAE, MSE, and RMSE for ADHD, depression and self-esteem indicate little predictive power of hours spent online on scores. Anxiety shows a slightly more accurate output based on figures, though the low R2 figure implies that hours online alone is not a good predictor of scores. 
+While hours onlne was found to be a significant influencer of scores on ADHD, anxiety, depression, and self-esteem measures, the low R-squared figure for each (especially depression and self-esteem) indicates it does not explain much of the variance in scores. High MAE, MSE, and RMSE for ADHD, depression and self-esteem indicate little predictive power of hours spent online on scores. Anxiety shows a slightly more accurate output based on figures, though the low R2 figure implies that hours online alone is not a good predictor of scores.
+
+### Limitations
+
+The questions used to assess ADHD, anxiety, depression, and self-esteem were created by the author of the dataset, rather than from diagnostic tools such as the Adult ADHD Self-Report Scale V1.1 (ASRS; Kessler *et al.*, 2005), the Anxiety Symptoms Questionnaire (ASQ, Baker *et al.*, 2019), the Beck Depression Inventory (BDI-II, Beck *et al.*, 1996), and the Rosenberg Self-Esteem Scale (RSES, Rosenberg, 1965).
+
+### Next Steps
 
 ## References
