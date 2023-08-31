@@ -4,29 +4,29 @@
 
 
 ## Introduction
-Social media often feels like a mainstay of life today, with 59.4% of the population actively engaging with it in some way (*The Changing World of Digital In 2023*, 2023). Social media use has seen increase from 1 hour 37  minutes in 2013 to 2 hours and 31 minutes in 2022 (*The Changing World of Digital In 2023*, 2023), while experience of a mental health condition has seen a 13% increase over the same timeframe (WHO, 2023). This has led some researchers to explore whether the two are connected with varying results.
+Social media often feels like a mainstay of life today, with 59.4% of the population actively engaging with it in some way (*The Changing World of Digital In 2023*, 2023). Social media use has seen increase from 1 hour 37  minutes in 2013 to 2 hours and 31 minutes in 2022 (*The Changing World of Digital In 2023*, 2023), while experience of a mental health condition has seen a 13% increase over the same timeframe (WHO, 2023). This has led some researchers to explore whether the two are connected, with varying results.
 
-One literature review found “social media envy” was linked to levels of depression and anxiety, however other mediating factors were also identified as having influence over these outcomes (Karim *et al.*, 2020). Another review found social media offered the opportunity to build and maintain relationships for individuals who may struggle to do so face-to-face due to serious mental health conditions and, in that sense, acts as a protective factor against the known negative impacts of loneliness and isolation (Naslund *et al.*, 2020). Conversely, increased social media usage is linked to reduced face-to-face interaction, which is a behaviour often indicative of addiction (Kuss and Griffiths, 2011). This has lead some to question the ethics of companies utilising psychological techniques and adaptive algorithms to essentially make social media addictive in an effort to fuel the attention economy (Bhargava and Velasquez, 2021).
+One literature review found “social media envy” was linked to levels of depression and anxiety, however other mediating factors were also identified as having influence over these outcomes (Karim *et al.*, 2020). Another review found social media offered the opportunity to build and maintain relationships for individuals who may struggle to do so face-to-face due to serious mental health conditions and, in that sense, acts as a protective factor against the known negative impacts of loneliness and isolation (Naslund *et al.*, 2020). Conversely, increased social media usage is linked to reduced face-to-face interaction, which is a behaviour often indicative of addiction (Kuss and Griffiths, 2011). This has led some to question the ethics of companies utilising psychological techniques and adaptive algorithms to essentially make social media addictive so as to fuel the attention economy (Bhargava and Velasquez, 2021).
 
 This project uses a publicly available dataset to explore what impacts, if any, social media use has on several mental health measures. It also looks at whether social media usage can be used to predict mental health outcomes, both in terms of platforms used and time spent online.
 
 ## Methodology
-Raw data was sourced from Kaggle (<a href="https://www.kaggle.com/datasets/souvikahmed071/social-media-and-mental-health?select=smmh.csv">source</a>). The data was collected via a survey asking about social media use and symptoms of depression, anxiety, and ADHD , and about self-esteem. These questions were rated on a five-point Likert scale (Joshi *et al.*, 2015) to quantify symptom severity. Analysis was done via linear regression, using hours spent online and total platforms in use as predictors of scores on ADHD, depression, anxiety, and self-esteem measures. Cleaning, exploration, and analysis of the data was done via Python in Colab, and the full code can be accessed <a href="https://github.com/ookadeet/SocialMedia-MentalHealth/blob/main/Social_Media_%26_Mental_Health.ipynb">here</a>. Please note, some elements of code were checked using LLMs such as ChatGPT. Independent variables were checked for collinearity by calculating the Variance Inflation Factor (Einblick, 2023) and deemed to not be collinear.
+Raw data was sourced from Kaggle (<a href="https://www.kaggle.com/datasets/souvikahmed071/social-media-and-mental-health?select=smmh.csv">source</a>). The data was collected via a survey asking about social media use and symptoms of depression, anxiety, and ADHD, and about self-esteem. These questions were rated on a five-point Likert scale (Joshi *et al.*, 2015) to quantify symptom severity. Analysis was done via linear regression, using hours spent online and total platforms in use as predictors of scores on ADHD, depression, anxiety, and self-esteem measures. Cleaning, exploration, and analysis of the data was done via Python in Colab, and the full code can be accessed <a href="https://github.com/ookadeet/SocialMedia-MentalHealth/blob/main/Social_Media_%26_Mental_Health.ipynb">here</a>. Please note, some elements of code were checked using LLMs such as ChatGPT. Independent variables were checked for collinearity by calculating the Variance Inflation Factor (Einblick, 2023) and deemed not to be collinear.
 
 ## Exploratory Data Analysis
 ### Respondent Make-Up
 #### Age
-80% of respondents are between 15 and 30 years old
+80% of respondents are between 15 and 30 years old.
 
 <img align="center" src="img/Age.png" height=300>
 
 #### Gender
-The majority of respondents identify as female
+Most respondents identify as female.
 
 <img align="center" src="img/Gender.png" height=300>
 
 #### Occupation
-72% of respondents are students, either in University or School
+72% of respondents are students, either in University or School.
 
 <img align="center" src="img/Work2.png" height=300>
 
@@ -48,12 +48,12 @@ Responses showed a normal distribution for both anxiety and depression, with dep
 <img align="center" src="img/Anx and Dep2.png" height=300>
 
 #### ADHD
-There were four questions relating to ADHD, and the graph shows the total across all. Answers are normally distributed, though skew towards the more severe resoponses (anything over 10 in this case).
+There were four questions relating to ADHD, and the graph shows the total across all. Answers are normally distributed, though skew towards the more severe responses (anything over 10 in this case).
 
 <img align="center" src="img/ADHD2.png" height=300>
 
 #### Self-esteem
-While still using the five-point scale, self esteem was scored differently with a score of three meaning no impact to self-esteem, one meaning very negative impact, and 5 meaning very positive impact. Respondents tend to skew negative here.
+While still using the five-point scale, self-esteem was scored differently with a score of three meaning no impact to self-esteem, one meaning very negative impact, and 5 meaning very positive impact. Respondents tend to skew negative here.
 
 <img align="center" src="img/Self Esteem2.png" height=300>
 
@@ -61,9 +61,9 @@ While still using the five-point scale, self esteem was scored differently with 
 
 For each of the dependent variables (scores on ADHD, anxiety, depression, and self-esteem measures), hypotheses were as follows:
 
-**H1** - Scores are influenced by time spent online and/or number of platforms used
+**H1** - Scores are influenced by time spent online and/or number of platforms used.
 
-**H0** - Scores are not influenced by either time spent online or number of platforms used
+**H0** - Scores are not influenced by either time spent online or number of platforms used.
 
 ## Results
 
@@ -80,12 +80,12 @@ The null hypothesis (H0) can be rejected for ADHD, anxiety, depression, and self
 
 ## Conclusion
 
-While hours onlne was found to be a significant influencer of scores on ADHD, anxiety, depression, and self-esteem measures, the low R-squared figure for each (especially depression and self-esteem) indicates it does not explain much of the variance in scores. High MAE, MSE, and RMSE for ADHD, depression and self-esteem indicate little predictive power of hours spent online on scores. Anxiety shows a slightly more accurate output based on figures, though the low R2 figure implies that hours online alone is not a good predictor of scores.
+While hours online was found to be a significant influencer of scores on ADHD, anxiety, depression, and self-esteem measures, the low R-squared figure for each (especially depression and self-esteem) indicates it does not explain much of the variance in scores. High MAE, MSE, and RMSE for ADHD, depression and self-esteem indicate little predictive power of hours spent online on scores. Anxiety shows a slightly more accurate output based on figures, though the low R2 figure implies that hours online alone is not a good predictor of scores.
 
 ### Limitations and Next Steps
 
-The <a href="https://github.com/ookadeet/SocialMedia-MentalHealth/blob/main/Questions.csv">questions</a> used to assess ADHD, anxiety, depression, and self-esteem were created by the author of the dataset and often specifically called out the use of social media as a contributing factor which could be seen to lead respondents to a particular response. The use of peer-reviewed diagnostic tools such as the Adult ADHD Self-Report Scale V1.1 (ASRS; Kessler *et al.*, 2005), the Anxiety Symptoms Questionnaire (ASQ, Baker *et al.*, 2019), the Beck Depression Inventory (BDI-II, Beck *et al.*, 1996), and the Rosenberg Self-Esteem Scale (RSES, Rosenberg, 1965) would result in more accurate measures of each, and removes the risk of leading questions.
+The <a href="https://github.com/ookadeet/SocialMedia-MentalHealth/blob/main/Questions.csv">questions</a> used to assess ADHD, anxiety, depression, and self-esteem were created by the author of the dataset and often specifically called out the use of social media as a contributing factor which could be seen to lead respondents to a particular response. The use of peer-reviewed diagnostic tools such as the Adult ADHD Self-Report Scale V1.1 (ASRS; Kessler *et al.*, 2005), the Anxiety Symptoms Questionnaire (ASQ, Baker *et al.*, 2019), the Beck Depression Inventory (BDI-II, Beck *et al.*, 1996), and the Rosenberg Self-Esteem Scale (RSES, Rosenberg, 1965) would result in more accurate measures of each and removes the risk of leading questions.
 
-As hours online only looked to explain some of the variance in scores, it would be worth exploring other variables known to impact mental health such as sleep quality, drug and alcohol use, and family history of mental health issues (Mayo Clinic, 2018; 2022) so the full extent of the influence of social media on mental health can be assessed. Additionally as the respondents to the survey were mainly students under the age of 30, repeating the study with a larger, more representative sample would reduce any potential bias seen in results.
+As hours online only looked to explain some of the variance in scores, it would be worth exploring other variables known to impact mental health such as sleep quality, drug and alcohol use, and family history of mental health issues (Mayo Clinic, 2018; 2022) so the full extent of the influence of social media on mental health can be assessed. Additionally, as the respondents to the survey were mainly students under the age of 30, repeating the study with a larger, more representative sample would reduce any potential bias seen in results.
 
 ## References
