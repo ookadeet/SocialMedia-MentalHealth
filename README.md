@@ -52,7 +52,7 @@ There were four questions relating to ADHD, and the graph shows the total across
 
 <img align="center" src="img/ADHD2.png" height=300>
 
-#### Self-Esteem
+#### Self-esteem
 While still using the five-point scale, self esteem was scored differently with a score of three meaning no impact to self-esteem, one meaning very negative impact, and 5 meaning very positive impact. Respondents tend to skew negative here.
 
 <img align="center" src="img/Self Esteem2.png" height=300>
@@ -67,7 +67,14 @@ For each of the dependent variables (scores on ADHD, anxiety, depression, and se
 
 ## Results
 
-For ADHD, anxiety, depression, and self-esteem, no significant influence of total number of platforms used was found while hours online was found to have a significant influence. The regression analysis was re-run for each using only hours spent online and retained significance. 
+For ADHD, anxiety, depression, and self-esteem, no significant influence of total number of platforms used was found while hours online was found to have a significant influence. The regression analysis was re-run for each using only hours spent online and retained significance.
+
+| Measure | p-Value | Intercept | Coefficient | R2 | MAE | MSE | RMSE |
+| :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: | :-------------: |
+| ADHD | <0.01 | 9.86 | 1.09 | 20.39% | 2.84 | 12.73 | 3.57 |
+| Anxiety | <0.01 | 4.28 | 0.55 | 22.49% | 1.65 | 3.79 | 1.95 |
+| Depression | <0.01 | 7.46 | 0.65 | 13.05% | 2.59 | 10.03 | 3.17 |
+| Self-esteem | 0.01 | 7.40 | 0.21 | 6.74% | 1.97 | 6.22 | 2.49 |
 
 ## Conclusion
 
