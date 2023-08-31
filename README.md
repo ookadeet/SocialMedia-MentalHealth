@@ -61,9 +61,9 @@ While still using the five-point scale, self esteem was scored differently with 
 
 For each of the dependent variables (scores on ADHD, Anxiety, Depression, and Self Esteem measures), hypotheses were as follows:
 
-**H1** - Scores are influenced by time spent online and number of platforms used
+**H1** - Scores are influenced by time spent online and/or number of platforms used
 
-**H0** - Scores are not influenced by time spent online and number of platforms used
+**H0** - Scores are not influenced by either time spent online or number of platforms used
 
 ## Results
 
