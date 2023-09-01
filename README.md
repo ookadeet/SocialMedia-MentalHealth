@@ -81,10 +81,34 @@ The null hypothesis (H0) can be rejected for ADHD, anxiety, depression, and self
 
 ## Conclusion
 
-While hours online were found to be a significant predictor of ADHD, anxiety, depression, and self-esteem, the low R-squared figure for each (especially depression and self-esteem) indicates it does not explain much of the variance in scores. High MAE, MSE, and RMSE for ADHD, depression and self-esteem indicate little predictive power of hours spent online on scores. Anxiety shows a slightly more accurate output, though the low R2 figure implies that hours online alone is not a good predictor of scores. Other variables known to impact mental health should be explored alongside, such as sleep quality, drug and alcohol use, and family history of mental health issues (Mayo Clinic, 2018; 2022) so the full extent of the influence of social media on mental health can be assessed. 
+While hours online were found to be a significant predictor of ADHD, anxiety, depression, and self-esteem, the low R-squared figure for each (especially depression and self-esteem) indicates it does not explain much of the variance in scores. High MAE, MSE, and RMSE for ADHD, depression and self-esteem indicate little predictive power of hours spent online on scores. Anxiety shows a slightly more accurate output, though the low R2 figure implies that hours online alone is not a good predictor of scores. Other variables known to impact mental health should be explored alongside, such as sleep quality, drug and alcohol use, and family history of mental health issues (Mayo Clinic, 2018, 2022) so the full extent of the influence of social media on mental health can be assessed. 
 
 ### Limitations
 
 The <a href="https://github.com/ookadeet/SocialMedia-MentalHealth/blob/main/Questions.csv">questions</a> used to assess ADHD, anxiety, depression, and self-esteem were created by the author of the dataset and often specifically called out the use of social media as a contributing factor which could be seen to lead respondents to a particular response. The use of peer-reviewed diagnostic tools such as the Adult ADHD Self-Report Scale V1.1 (ASRS; Kessler *et al.*, 2005), the Anxiety Symptoms Questionnaire (ASQ, Baker *et al.*, 2019), the Beck Depression Inventory (BDI-II, Beck *et al.*, 1996), and the Rosenberg Self-Esteem Scale (RSES, Rosenberg, 1965) would result in more accurate measures of each and removes the risk of leading questions.
 
 ## References
+
+Baker, A. et al. (2019) ‘Anxiety Symptoms Questionnaire (ASQ): development and validation’, General Psychiatry, 32(6), p. e100144. Available at: https://doi.org/10.1136/gpsych-2019-100144.
+
+Beck, A.T. et al. (1996) ‘Comparison of Beck Depression Inventories-IA and-II in Psychiatric Outpatients’, Journal of Personality Assessment, 67(3), pp. 588–597.
+
+Bhargava, V.R. and Velasquez, M. (2021) ‘Ethics of the Attention Economy: The Problem of Social Media Addiction’, Business Ethics Quarterly, 31(3), pp. 321–359. Available at: https://doi.org/10.1017/beq.2020.32.
+
+Joshi, A. et al. (2015) ‘Likert Scale: Explored and Explained’, British Journal of Applied Science & Technology, 7(4), pp. 396–403. Available at: https://doi.org/10.9734/BJAST/2015/14975.
+
+Kessler, R.C. et al. (2005) ‘The World Health Organization adult ADHD self-report scale (ASRS): a short screening scale for use in the general population’, Psychological Medicine, 35(2), pp. 245–256. Available at: https://doi.org/10.1017/S0033291704002892.
+
+Kuss, D.J. and Griffiths, M.D. (2011) ‘Online Social Networking and Addiction—A Review of the Psychological Literature’, International Journal of Environmental Research and Public Health, 8(9), pp. 3528–3552. Available at: https://doi.org/10.3390/ijerph8093528.
+
+Mayo Clinic (2018) Anxiety disorders - Symptoms and causes, Mayo Clinic. Available at: https://www.mayoclinic.org/diseases-conditions/anxiety/symptoms-causes/syc-20350961 (Accessed: 31 August 2023).
+
+Mayo Clinic (2022) Depression (major depressive disorder) - Symptoms and causes, Mayo Clinic. Available at: https://www.mayoclinic.org/diseases-conditions/depression/symptoms-causes/syc-20356007 (Accessed: 31 August 2023).
+
+Naslund, J.A. et al. (2020) ‘Social Media and Mental Health: Benefits, Risks, and Opportunities for Research and Practice’, Journal of Technology in Behavioral Science, 5(3), pp. 245–257. Available at: https://doi.org/10.1007/s41347-020-00134-x.
+
+Rosenberg, M. (1965) Society and the Adolescent Self-Image. Princeton University Press.
+
+The Changing World of Digital In 2023 (2023) We Are Social UK. Available at: https://wearesocial.com/uk/blog/2023/01/the-changing-world-of-digital-in-2023/ (Accessed: 18 June 2023).
+
+WHO (2023) Mental health, World Health Organisation. Available at: https://www.who.int/health-topics/mental-health (Accessed: 10 August 2023).
